@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEHO.VABombers.Web", "NEHO.VABombers.Web\NEHO.VABombers.Web.csproj", "{82263DC8-FF6F-46BA-95E2-0844F47463F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEHO.VABombers.Data", "NEHO.VABombers.Data\NEHO.VABombers.Data.csproj", "{203B5F7D-E920-4013-8EDB-985F4879E364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82263DC8-FF6F-46BA-95E2-0844F47463F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82263DC8-FF6F-46BA-95E2-0844F47463F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82263DC8-FF6F-46BA-95E2-0844F47463F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82263DC8-FF6F-46BA-95E2-0844F47463F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203B5F7D-E920-4013-8EDB-985F4879E364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203B5F7D-E920-4013-8EDB-985F4879E364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203B5F7D-E920-4013-8EDB-985F4879E364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203B5F7D-E920-4013-8EDB-985F4879E364}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58D42B15-BE37-4388-8DD9-F59B15BD9ECB}
+	EndGlobalSection
+EndGlobal

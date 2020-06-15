@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>@ViewBag.Title</title>
+  <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a asp-controller="App" asp-action="Index" class="navbar-brand">VA Bombers</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a asp-controller="App" asp-action="Index" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a asp-controller="App" asp-action="Contact" class="nav-link">News</a>
+          </li>
+          <li class="nav-item">
+            <a asp-controller="App" asp-action="Contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a asp-controller="App" asp-action="About" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div>
+    @RenderBody()
+  </div>
+
+  <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/fe7baf6f82.js" crossorigin="anonymous"></script>
+  <script>
+    $('#year').text(new Date().getFullYear());
+  </script>
+  @RenderSection("scripts", false)
+</body>
+</html>
