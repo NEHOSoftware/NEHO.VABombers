@@ -1,1 +1,54 @@
-﻿<h2>Contact the Bombers</h2>
+﻿<section id="gallery" class="py-5">
+  <div class="container">
+    <h1 class="text-center">Photo Gallery</h1>
+    <p class="text-center">Check out our Coaching Staff</p>
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox"
+           data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid" />
+        </a>
+      </div><div class="col-md-4">
+        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox"
+           data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox"
+           data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid" />
+        </a>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox"
+           data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid" />
+        </a>
+      </div><div class="col-md-4">
+        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox"
+           data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox"
+           data-gallery="img-gallery" data-height="560" data-width="560">
+          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+@section scripts {
+  <script>
+    // Lightbox init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
+}

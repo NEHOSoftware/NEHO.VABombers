@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width" />
   <title>@ViewBag.Title</title>
   <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="~/node_modules/ekko-lightbox/dist/ekko-lightbox.css" rel="stylesheet" />
+  <link href="~/node_modules/slick-carousel-latest/slick/slick.css" rel="stylesheet" />
+  <link href="~/node_modules/slick-carousel-latest/slick/slick-theme.css" rel="stylesheet" />
   <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
@@ -16,7 +19,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a asp-controller="App" asp-action="Index" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
@@ -36,11 +39,41 @@
     @RenderBody()
   </div>
 
+  <!-- Footer Section -->
+  <footer id="main-footer" class="text-center p-4 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy; <span id="year"></span> NEHO Software, LLC</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
   <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/fe7baf6f82.js" crossorigin="anonymous"></script>
+  <script src="~/node_modules/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+  <script src="~/node_modules/slick-carousel-latest/slick/slick.min.js"></script>
   <script>
     $('#year').text(new Date().getFullYear());
+
+      //$('#navbarCollapse > ul.navbar-nav li').click(function (e) {
+      //  $('.navbar-nav li.active').removeClass('active');
+      //  var $this = $(this);
+      //  if (!$this.hasClass('active')) {
+      //    $this.addClass('active');
+      //  }
+      //  e.preventDefault();
+      //});
+      //$(document).ready(function () {
+      //  $('ul.navbar-nav li').click(function (e) {
+      //    e.preventDefault();
+      //    $('ul.navbar-nav li').removeClass('active');
+      //    $(this).addClass('active');
+      //  });
+      //});
+
   </script>
   @RenderSection("scripts", false)
 </body>

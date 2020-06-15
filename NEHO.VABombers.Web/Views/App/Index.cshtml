@@ -1,13 +1,4 @@
-﻿@section scripts {
-  <script>
-    $('.carousel').carousel({
-      interval: 6000,
-      pause: 'hover'
-    });
-  </script>
-}
-
-<!-- Showcase Carousel -->
+﻿<!-- Showcase Carousel -->
 <section id="showcase">
   <div id="homeCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -138,3 +129,58 @@
     </div>
   </div>
 </section>
+
+<section id="newsletter" class="text-center p-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Sign Up For Our Newsletter</h1>
+        <p>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque
+           euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit
+           amet justo nunc tempor, metus vel.
+        </p>
+        <form class="form-inline justify-content-center">
+          <input type="text" value="" class="form-control mb-2 mr-2" placeholder="Your Name" />
+          <input type="text" value="" class="form-control mb-2 mr-2" placeholder="Your Email Address" />
+          <button class="btn btn-primary mb-2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Modal -->
+<div id="videoModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+        <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+@section scripts {
+  <script>
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    });
+
+    // Video Play
+    $(function () {
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    });
+  </script>
+}
